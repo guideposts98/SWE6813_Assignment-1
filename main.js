@@ -24,5 +24,5 @@ var contactClick = function() {
 
 /* link back to home page */
 var homeClick = function() {
-    window.location.href = "/index.html";
+    window.location.href = "/SWE6813_Assignment_1/index.html";
 }
