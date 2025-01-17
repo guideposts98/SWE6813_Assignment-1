@@ -1,0 +1,237 @@
+/* 
+  stylesheet - main.css
+*/
+
+/* Top Header: "My Portfolio" */
+header {
+    height: 80px; /* adjusts height */
+    background: linear-gradient(to right, #4CAF50 0%, #00BCD4 50%, #FFEB3B 100%); /* unique color */
+    animation: gradient 10s ease-in-out infinite alternate; /* animation effect */
+    display: flex; /* display is adjustable */
+    justify-content: center; /* align content to center */
+    align-items: center; /* aligns to center */
+    margin-bottom: 15px; /* add space to bottom */
+  }
+  
+  /* Controls background gradient */
+  @keyframes gradient {
+    0% {
+      background-position: 0% 0%; /* position horizontal and vertical */ 
+    }
+    100% {
+      background-position: 100% 0%; /* poistion horizontal and vertical */
+    }
+  }
+  
+ /* Header: "My Portfolio" */
+ header h1 {
+    color: #f5f5f5; /* color change */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* add shadow effect */
+    font-size: 40px; /* text font size */
+}
+
+/* body */
+body {
+    display: flex; /* allows flex body */
+    flex-direction: column; /* arranges vertically 
+        if not done, it collides with header */
+}
+
+/* container */
+.container {
+    display: grid; /* grid layout for the sections */
+    grid-template-columns: repeat(2, 1fr); /* creates two columns */
+    grid-gap: 20px; /* adds space between grid sections */
+    margin: 20px; /* adds margin around container */
+}
+
+/* section */
+.section {
+    padding: 5px; /* add padding space */
+    border: 1px solid gray; /* border color */
+    text-align: center; /* aligns text to center */  
+}
+
+.section img {
+    width: 100%; /* makes image fill the container */
+    height: auto; /* adjusts image height while maintaining ratio */
+    object-fit: contain; /* scale image to fit within container while ratio intact */ 
+}
+
+
+/* Footer */
+footer {
+    height: 100px; /* height size */
+    background: linear-gradient(to right, #4CAF50 0%, #00BCD4 50%, #FFEB3B 100%); /* color change */
+    display: flex; /* display adjustable */
+    margin-top: 15px; /* add space at top */
+    width: 100%; /* width to 100% */
+    justify-content: center; /* aligns button center horizontally */
+    align-items: center; /* aligns button center vertically */
+}
+
+ /* Footer Button: "My Portfolio" */
+ footer button {
+  background-color: #333; /* Dark gray button color */
+  color: #f5f5f5; /* color change */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* add shadow effect */
+  font-size: 25px; /* text font size */
+  padding: 10px 25px; /* add padding  */
+  border: none; /* remove border */
+  border-radius: 5px; /* add rounded corners */
+  cursor: pointer; /* indicate click */
+  width: 200px; /* width to 200 pixels */
+  height: 50px; /* height to 50 pixels */
+}
+
+/* Footer Button: color change when mouse hovers over button */
+footer button:hover {
+  background: linear-gradient(to right, #ffc107 0%, #00BCD4 50%, #4CAF50 100%); /* unique colors */
+}
+
+
+
+/* About Page */
+
+.about-us {
+  display: flex; /* display is adjustable */
+  align-items: center; /* align content to center */
+  width: 100%; /* width to 100% */
+  padding: 90px 0; /* add padding space */
+}
+
+.about {
+  width: 100%; /* width to 100% */
+  margin: 0 auto; /* set top & bottom 0; left & right margin auto */
+  display: flex; /* display is adjustable */
+  justify-content: center; /* align content to center */
+}
+
+.about img{
+  height: auto; /* sets height to auto adjust */
+  width: 450px; /* sets width */
+  border-radius: 10px; /* controls border and corner size */
+}
+
+.summary {
+  width: 500px; /* sets width */
+}
+
+.summary h2 {
+  color: #555; /* dark to grayish color */
+  font-size: 50px; /* sets font size */
+  font-weight: 550; /* sets font thickness */
+  margin-bottom: 5px; /* sets bottom margin space */
+}
+
+.summary p {
+  color: #555; /* dark to grayish color */
+  font-size: 20px; /* sets font size */
+  line-height: 25px; /* set vertical spacing between texts */
+  letter-spacing: 1px; /* set horizontal spacing between texts */
+}
+
+
+
+
+/* Project Page */
+
+.projectContainer {
+  display: flex; /* display is adjustable */
+  flex-direction: column; /* set container axis to be vertical */
+  align-items: center; /* aligns container items to center */
+}
+
+.images {
+  display: flex; /* display is adjutable */
+  justify-content: space-between; /* set space between content */ 
+  max-width: 600px; /* set max width */
+  margin-bottom: 20px; /* sets margin at the bottom */
+}
+
+.images img {
+  max-width: 300px; /* set max width */
+  height: auto; /* set height to automatic */
+}
+
+.project_p {
+  color: #555; /* dark to grayish color */
+  max-width: 600px; /* set max width */
+  padding: 30px; /* set padding space */
+  border-radius: 5px; /* control border and corner size */
+  box-shadow: 2px 2px 5px 0px gray; /* horizontal, vertical, effect, and size */
+}
+
+
+
+/* Resume Page */
+
+.resumeContainer {
+  display:flex; /* display is adjustable */
+  justify-content: center; /* align content to center */
+  padding: 10px; /* set padding space */
+}
+
+.resume {
+  width: 100%; /* set witdh to 100% */
+  max-width: 600px; /* set max width limit */
+  padding: 15px; /* set padding space */
+  border-radius: 5px; /* control border and corner size */
+  box-shadow: 0 5px 15px lightgray; /* horizontal, vertical, effect */
+}
+
+h2 {
+  margin-bottom: 5px; /* set margin at bottom */
+}
+
+.job {
+  display: flex; /* display is adjustable */
+  justify-content: space-between; /* align content to center */
+  margin-bottom: 5px; /* set margin at bottom */
+}
+
+.title {
+  font-style: italic; /* italicize */ 
+}
+
+.company {
+  display: flex; /* display is adjutable */
+  justify-content: space-between; /* align content to center */
+
+}
+
+.skills {
+  margin-bottom: 5px; /* set margin at bottom */
+}
+
+.skillCategory {
+  font-weight: bold; /* bolding */
+}
+
+
+/* Contact Page */
+
+.contactContainer {
+  padding: 30px; /* set padding space */
+  border-radius: 5px; /* control border and set size */
+  box-shadow: 2px 2px 5px 0px gray; /* horizontal, vertical, effect, corner */
+  justify-content: center; /* align content to center */
+  display: flex; /*display is adjustable */
+}
+
+.contactList {
+  text-align: center; /* sets horizontal alignment of the text */
+}
+
+.contactItem {
+  display: flex; /* display is adjustable */
+  align-items: center; /* aligns element to the center */
+}
+
+.contactItem img {
+  margin-right: 10px; /* sets margin right space */
+  width: 25px; /* set width size */
+  height: 25px; /* set height size */
+}
+
+
